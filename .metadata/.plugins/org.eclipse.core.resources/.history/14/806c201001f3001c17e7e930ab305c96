@@ -1,0 +1,14 @@
+package com.tsys.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class IndexRestController {
+	
+	@RequestMapping("/json2")
+	public String json2() {
+		return "index.html";
+	}
+
+}

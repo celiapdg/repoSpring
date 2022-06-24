@@ -1,0 +1,30 @@
+package com.tsys.controllers;
+
+import java.util.ArrayList;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.tsys.models.Persona;
+
+@Controller
+public class MainController {
+	
+	ArrayList<Persona> personas;
+	
+	@GetMapping("/persona")
+	public Persona getPersona() {
+		Persona persona = new Persona("Celia", "Lumbreras", 26);
+		personas.add(persona);
+		return persona;
+	}
+	
+	@PostMapping("/newpersona")
+	public Persona postPersona(@RequestBody Persona persona) {
+		return persona;
+	}
+	
+	
+}

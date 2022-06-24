@@ -1,0 +1,5 @@
+package com.tsys.model;
+
+public class Car {
+
+}

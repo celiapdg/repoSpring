@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;ejercicio2&apos;&#x0D;&#x0A;- Original project: &apos;ejercicio2&apos;&#x0D;&#x0A;- Original element: &apos;&apos;spring_app_log_file.log&apos;&apos;" description="Delete element" element1="&apos;spring_app_log_file.log&apos;" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1655897439201" subPackages="false" version="1.0"/>
+</session>

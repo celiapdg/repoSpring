@@ -1,0 +1,42 @@
+package com.tsys.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.tsys.model.Car;
+
+@Controller
+public class MainController {
+	
+	@RequestMapping("/")
+	public String showIndex() {
+		return "index.html";
+	}
+	
+	@RequestMapping(path="/index2", produces="application/json")
+	@ResponseBody
+	public String showIndexJson() {
+		return "{\"page\": \"index.html\"}";
+	}
+	
+	@RequestMapping(path = "/a", produces="application/json")
+	@ResponseBody
+	public String showA() {
+		return "{\"letra\": \"A\"}";
+	}
+	
+	@RequestMapping("/car")
+	@ResponseBody
+	public Car showCar() {
+		return new Car();
+	}
+	
+	@RequestMapping("/object")
+	@ResponseBody
+	public Car showObject() {
+		ObjectMapper
+		return car;
+	}
+
+}

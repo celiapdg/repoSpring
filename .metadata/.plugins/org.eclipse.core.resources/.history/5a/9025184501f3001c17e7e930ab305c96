@@ -1,0 +1,23 @@
+package com.tsys.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tsys.models.Car;
+
+@Controller
+public class IndexController {
+	
+	@RequestMapping("/hola")
+	public String saludo() {
+		return "index.html";
+	}
+	
+	@RequestMapping("/json1")
+	public Car json1() {
+		Car car = new Car();
+		car.color = "green";
+		return car;
+	}
+
+}

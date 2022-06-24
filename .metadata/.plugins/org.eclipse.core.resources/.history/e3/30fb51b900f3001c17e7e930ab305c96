@@ -1,0 +1,6 @@
+package com.tsys.controllers;
+
+@Controller
+public class ComponentController {
+
+}

@@ -1,0 +1,29 @@
+package com.tsys.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.tsys.model.Car;
+
+@Controller
+public class MainController {
+	
+	@RequestMapping("/")
+	public String showIndex() {
+		return "index.html";
+	}
+	
+	@RequestMapping("/a")
+	public String showA() {
+		return "A";
+	}
+	
+	@RequestMapping("/car")
+	@ResponseBody
+	public Car showCar() {
+		Car car = new Car();
+		return car;
+	}
+
+}

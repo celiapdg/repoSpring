@@ -1,0 +1,13 @@
+package com.tsys.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class IndexController {
+	
+	@RequestMapping("hola")
+	public String saludo() {
+		return "index.html";
+	}
+
+}

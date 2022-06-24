@@ -1,0 +1,20 @@
+2022-06-22 13:30:43 [main] INFO  com.tsys.Ejercicio2Application - Starting Ejercicio2Application using Java 11.0.15 on Formacion14 with PID 7672 (C:\Users\FORMACIÓN\eclipse-springboot\ejercicio2\target\classes started by FORMACIÓN in C:\Users\FORMACIÓN\eclipse-springboot\ejercicio2)
+2022-06-22 13:30:43 [main] INFO  com.tsys.Ejercicio2Application - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:30:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:30:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 13:30:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 13:30:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 13:30:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 942 ms
+2022-06-22 13:30:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:30:45 [main] INFO  com.tsys.Ejercicio2Application - Started Ejercicio2Application in 1.801 seconds (JVM running for 2.626)
+2022-06-22 13:30:52 [RMI TCP Connection(2)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2022-06-22 13:34:06 [main] INFO  com.tsys.Ejercicio2Application - Starting Ejercicio2Application using Java 11.0.15 on Formacion14 with PID 3920 (C:\Users\FORMACIÓN\eclipse-springboot\ejercicio2\target\classes started by FORMACIÓN in C:\Users\FORMACIÓN\eclipse-springboot\ejercicio2)
+2022-06-22 13:34:06 [main] INFO  com.tsys.Ejercicio2Application - No active profile set, falling back to 1 default profile: "default"
+2022-06-22 13:34:07 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-06-22 13:34:07 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-22 13:34:07 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-22 13:34:08 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-22 13:34:08 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1027 ms
+2022-06-22 13:34:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-22 13:34:08 [main] INFO  com.tsys.Ejercicio2Application - Started Ejercicio2Application in 2.022 seconds (JVM running for 3.051)
+2022-06-22 13:36:27 [RMI TCP Connection(6)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
