@@ -1,6 +1,7 @@
 package com.tsys.controllers;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -17,7 +18,7 @@ import ch.qos.logback.classic.Logger;
 @RestController
 public class MainController {
 	
-	ArrayList<Persona> personas = new ArrayList<Persona>();
+	List<Persona> personas = new ArrayList<Persona>();
 	private static final Logger LOGGER = (Logger) LoggerFactory.getLogger(MainController.class);
 	
 	@GetMapping("/yo")
