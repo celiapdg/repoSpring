@@ -1,7 +1,10 @@
 package com.tsys.controllers;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -28,9 +31,12 @@ public class UsuarioController {
 	// https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcOperations.html#query-java.lang.String-org.springframework.jdbc.core.RowMapper-java.lang.Object...-
 
 	@GetMapping("/usuario/{id}")
-	public Usuario muestraUsuario(@PathVariable Long id) {
+	public ResponseEntity<Usuario> muestraUsuario(@PathVariable Long id) {
 		final String QUERY = "SELECT * FROM usuarios WHERE id=?;";
-		return (Usuario) jdbcTemplate.queryForObject(QUERY, new BeanPropertyRowMapper(Usuario.class), id);
+		List<Usuario> us = jdbcTemplate.query(QUERY, new BeanPropertyRowMapper<Usuario>(Usuario.class), id);
+		if (us.isEmpty()) return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		return new ResponseEntity<Usuario>(us.get(0), HttpStatus.OK);
+		//return (Usuario) jdbcTemplate.queryForObject(QUERY, new BeanPropertyRowMapper(Usuario.class), id);
 	}
 
 	@PostMapping("/usuario/nuevo")
